@@ -1,12 +1,12 @@
 import React from 'react';
 
-import Private from 'routes/Private';
+import Calendar from 'Calendar.tsx';
 
 import { render, screen } from 'test-utils';
 
 describe('Private', () => {
   it('should render properly', () => {
-    render(<Private />);
+    render(<Calendar />);
 
     expect(screen.getByTestId('Private')).toMatchSnapshot();
   });

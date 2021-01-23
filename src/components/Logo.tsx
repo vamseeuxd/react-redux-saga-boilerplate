@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
   align-items: flex-start;
   display: inline-flex;
   font-size: 0;
-  color:white;
+  color: white;
 
   svg {
     height: 4.2rem;
@@ -19,7 +19,7 @@ function Logo() {
   return (
     <Wrapper>
       Teammate Scheduler
-      {/* <SVG src={`${process.env.PUBLIC_URL}/media/brand/icon.svg`} /> */}
+      <SVG src={`${process.env.PUBLIC_URL}/media/brand/icon.svg`} />
     </Wrapper>
   );
 }
