@@ -16,6 +16,7 @@ import Reload from 'components/Reload';
 import reportWebVitals from './reportWebVitals';
 import Root from './Root';
 import { register } from './serviceWorkerRegistration';
+import 'bootstrap/dist/css/bootstrap.css';
 
 const { store, persistor } = configStore();
 

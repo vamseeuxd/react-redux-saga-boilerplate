@@ -1,52 +1,26 @@
 import React from 'react';
 import { createGlobalStyle } from 'styled-components';
 
-import { appColor } from 'modules/theme';
+import { headerHeight } from 'modules/theme';
 
 const GlobalStyle = createGlobalStyle`
-  *,
-  *:before,
-  *:after {
-    box-sizing: border-box;
-  }
-
-  html {
-    font-size: 62.5%;
-    -webkit-font-smoothing: antialiased;
-    height: 100%;
-  }
-
-  body {
-    font-family: Lato, sans-serif;
-    font-size: 16px; /* stylelint-disable unit-disallowed-list */
-    margin: 0;
-    min-height: 100vh;
-    padding: 0;
-  }
-
-  img {
-    height: auto;
-    max-width: 100%;
-  }
-
-  a {
-    color: ${appColor};
-    text-decoration: none;
-
-    &.disabled {
-      pointer-events: none;
+  body{
+    .button-mode  {
+        cursor:pointer;
     }
-  }
-
-  button {
-    appearance: none;
-    background-color: transparent;
-    border: 0;
-    cursor: pointer;
-    display: inline-block;
-    font-family: inherit;
-    line-height: 1;
-    padding: 0;
+    .app-page {
+        height: calc(100vh - ${headerHeight}px);
+        max-height: calc(100vh - ${headerHeight}px);
+        overflow-y: auto;
+        padding: 0 30px;
+    }
+    .active-nav-item {
+      border-bottom: 5px solid #2f8bc4;
+    }
+    .nav-link {
+        margin-bottom: -17px;
+        padding-bottom: 17px;
+    }
   }
 `;
 
