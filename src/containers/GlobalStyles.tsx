@@ -22,6 +22,20 @@ const GlobalStyle = createGlobalStyle`
         padding-bottom: 17px;
     }
   }
+  .rbc-btn-group{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    top:0px
+    button{
+      position: absolute;
+      left: 0px;
+      top:0px
+      &:first-child{
+          display:none; 
+      }
+    }
+  }
 `;
 
 export default function GlobalStyles() {
